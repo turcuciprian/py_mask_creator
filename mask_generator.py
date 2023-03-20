@@ -1,10 +1,13 @@
 from PIL import Image
 import numpy as np
 import os
+from myLib import *
 
 # Set the input and output folder paths
 input_folder = 'beforeMasks'
 output_folder = 'afterMasks'
+create_folder_if_missing(input_folder)
+create_folder_if_missing(output_folder)
 
 # Define the color threshold (in RGB)
 red_threshold = (255, 0, 0)
